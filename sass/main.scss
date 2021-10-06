@@ -1,0 +1,194 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+  @media (max-width: 768px) {
+    font-size: 55%;
+  }
+  @media (max-width: 576px) {
+    font-size: 50%;
+  }
+}
+body {
+  box-sizing: border-box;
+}
+
+.logo-con {
+  padding: 1rem 0;
+  text-align: center;
+  &__link {
+    font-size: 2rem;
+    text-decoration: none;
+  }
+  &__img {
+    max-width: 5rem;
+  }
+}
+
+.navigation {
+  padding: 1rem;
+  background-color: rgb(11, 126, 180);
+  &__con {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__link {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    &:hover {
+      color: rgb(3, 13, 20);
+    }
+  }
+}
+
+.slider-con {
+  padding: 0;
+  max-height: 60rem;
+  overflow: hidden;
+}
+
+.carousel-item {
+  max-height: 60rem;
+  @media (max-width: 768px) {
+    height: 25rem;
+  }
+}
+
+.carousel {
+  & img {
+    @media (max-width: 768px) {
+      height: 25rem;
+    }
+  }
+}
+
+.carousel-caption {
+  background-color: rgba(36, 36, 36, 0.294);
+  & h5 {
+    font-size: 3.2rem;
+  }
+  & p {
+    font-size: 2rem;
+  }
+}
+
+.little-about {
+  padding: 12rem 0;
+  &__col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__col2 {
+    @media (max-width: 768px) {
+      padding-top: 3rem;
+    }
+  }
+  &__img {
+    max-width: 10rem;
+    @media (max-width: 768px) {
+      padding-bottom: 2rem;
+    }
+  }
+  &__text {
+    padding: 0 2rem;
+  }
+  &__header {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+  }
+  &__paragraph {
+    font-size: 1.6rem;
+  }
+}
+
+.event {
+  padding: 4rem 0;
+  overflow: hidden;
+
+  &__header {
+    &-box {
+      text-align: center;
+    }
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+}
+
+.accordion-header {
+  & button {
+    font-size: 2rem;
+  }
+}
+
+.accordion-body {
+  font-size: 1.6rem;
+}
+
+.teacher {
+  padding: 4rem 0;
+  background-color: rgb(11, 126, 180);
+  &__header {
+    color: white;
+    padding-bottom: 4rem;
+  }
+  &__col1 {
+    text-align: center;
+
+    @media (max-width: 768px) {
+      padding-top: 2.5rem;
+    }
+  }
+  &__img {
+    width: 22rem;
+    height: 22rem;
+    border-radius: 50%;
+  }
+  &__subheader {
+    font-size: 2rem;
+    color: white;
+    padding-top: 1.5rem;
+  }
+  &__title {
+    color: white;
+    font-size: 1.8rem;
+  }
+}
+
+.footer {
+  background-color: rgb(26, 26, 26);
+  padding: 4rem 0;
+  color: white;
+  &__title {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+  }
+  &__img {
+    max-width: 4rem;
+    padding-right: 1.5rem;
+    align-self: center;
+  }
+  &__address {
+    margin: 0;
+    font-weight: 400;
+  }
+  &__text {
+    font-size: 1.4rem;
+    padding-top: 2rem;
+  }
+}
